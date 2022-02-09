@@ -12,11 +12,11 @@ class Archive:
         soup = BeautifulSoup(response.text, "html.parser")
         return hash(soup.select(selector)[0])
 
-    def add(self, url: str, selector: str, author: int):
+    def add(self, url: str, selector: str, author: int) -> None:
         content = self.fetch(url, selector)
         self.tickets |= {(url, selector, author, content)}
 
-    def update(self):
+    def update(self) -> set[tuple[str, str, str, int]]:
         changed = {
             (url, locator, author, content)
             for url, locator, author, content in self.tickets
