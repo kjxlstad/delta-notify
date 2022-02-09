@@ -2,6 +2,8 @@
 
 # Delta Notify
 
+[Link to hosted bot](https://discord.com/api/oauth2/authorize?client_id=940913828873502760&permissions=2048&scope=bot)
+
 Quick and dirty discord bot that notifies users when specified content on websites changes. Users can message the bot with a URL and a CSS selector, the bot will then check the document at that location for changes every 30 minutes and message you back if the content is changed.
 
 ## Requirements
