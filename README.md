@@ -17,7 +17,7 @@ or manually install
 - discord.py
 
 ## Setup
-Set the TOKEN environment variable to your discord bot token inside a `.env` file Start the server by running main.py, users can then use the command.
+Set the TOKEN environment variable to your discord bot token inside a `.env` file Start the server by running main.py.
 
 ## Usage
 ```
